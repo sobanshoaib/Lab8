@@ -10,7 +10,15 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
+
 public class CustomListTest {
+
+    private CustomList list;
+
+    public CustomList MockCityList() {
+        list = new CustomList(null, new ArrayList<>());
+        return list;
+    }
 
     @Test
     public void addCityTest(){
